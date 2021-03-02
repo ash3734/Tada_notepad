@@ -1,0 +1,14 @@
+DEBUG 21-03-03 00:14:20[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:14:20[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:14:50[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:14:50[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:15:20[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:15:20[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:15:50[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:15:50[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:16:20[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:16:20[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:16:50[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:16:50[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+DEBUG 21-03-03 00:17:20[HikariPool-1 housekeeper] [HikariPool:421] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+DEBUG 21-03-03 00:17:20[HikariPool-1 housekeeper] [HikariPool:517] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.

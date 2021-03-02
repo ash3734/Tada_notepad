@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace = "notepad">
+	
+	<select id="notepadList" parameterType = "java.util.HashMap" resultType = "org.apache.commons.collections4.map.CaseInsensitiveMap">
+		SELECT  ID
+		       ,MEMO
+		       ,CREATE_ID
+		       ,CREATED_AT
+		 FROM NOTEPAD
+		WHERE 1=1
+	      	<if test="id!=null">
+	      	AND ID = #{id}
+	      	</if>
+	      	<if test="memo!=null">
+	      	AND	MEMO LIKE concat('%',#{memo},'%')
+	      	</if>
+	        <if test="create_id!=null">
+	      	AND	CREATE_ID = #{create_id}
+	      	</if>
+	        <if test="created_start!=null">
+	      	AND	DATE_FORMAT(CREATED_AT,'%Y-%m-%d') <![CDATA[>=]]> #{created_start}
+	      	</if>
+	        <if test="created_end!=null">
+	      	AND	DATE_FORMAT(CREATED_AT,'%Y-%m-%d') <![CDATA[<=]]> #{created_end}
+	      	</if>
+	</select>
+	
+	<select id="notepadListCount" parameterType = "java.util.HashMap" resultType = "int">
+		SELECT COUNT(*)
+		 FROM NOTEPAD
+		WHERE ID = #{id}
+		  AND MEMO = #{memo}
+		  AND CREATE_ID = #{create_id}
+		  AND CREATED_AT >= #{created_at}
+	</select>
+	
+	<insert id="notepadInsert" parameterType = "java.util.HashMap" >
+	  INSERT INTO NOTEPAD
+	  VALUES (
+	  		    DEFAULT
+	  		   ,#{memo}
+	  		   ,#{create_id}
+	  		   ,NOW()
+	  		 )
+	</insert>
+	
+	<update id="notepadUdate" parameterType = "java.util.HashMap" >
+	  UPDATE NOTEPAD
+	     SET MEMO = #{memo}
+	   WHERE ID   = #{id}
+	</update>
+	
+	<delete id="notepadDelete" parameterType = "long" >
+		DELETE FROM NOTEPAD
+		 WHERE ID = #{id}
+	</delete>
+</mapper>
